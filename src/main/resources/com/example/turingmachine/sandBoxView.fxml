@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.turingmachine.ViewController.UniversalView">
+    <children>
+        <Text fill="#ff2c00" layoutX="475.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAND BOX" wrappingWidth="250.13671875">
+            <font>
+                <Font name="Gabriola" size="64.0" />
+            </font>
+        </Text>
+      <Text fx:id="nOStatesText" fill="#ff2c00" layoutX="71.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of states?" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="accStateText" fill="#ff2c00" layoutX="71.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept state?" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#ff2c00" layoutX="71.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="***Add the algorithm***" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="rejStateText" fill="#ff2c00" layoutX="71.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reject state?" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="alphabetText" fill="#ff2c00" layoutX="71.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the alphabets:" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="forStateText" fill="#ff2c00" layoutX="71.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For state 0 (initial state):" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="readText" fill="#ff2c00" layoutX="139.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read" wrappingWidth="108.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="readTextField" layoutX="217.0" layoutY="431.0" prefHeight="40.0" prefWidth="40.0" />
+      <Text fx:id="writeText" fill="#ff2c00" layoutX="139.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write" wrappingWidth="108.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="directionText" fill="#ff2c00" layoutX="139.0" layoutY="636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direction" wrappingWidth="108.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="writeTextField" layoutX="217.0" layoutY="489.0" prefHeight="40.0" prefWidth="40.0" />
+      <Text fx:id="nextStateText" fill="#ff2c00" layoutX="71.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next state?" wrappingWidth="108.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="rulesLabel" layoutX="533.0" layoutY="437.0" prefHeight="305.0" prefWidth="616.0" styleClass="rulesLabel" stylesheets="@cssFiles/label.css" />
+      <Text fx:id="rulesText" fill="#ff2c00" layoutX="740.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Added transaction rules" wrappingWidth="309.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <HBox layoutX="246.0" layoutY="173.0" prefHeight="40.0" prefWidth="213.0" spacing="15.0">
+         <children>
+            <TextField fx:id="nOStatesTextField" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="nOStatesBtn" mnemonicParsing="false" onAction="#nOStatesClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="✔">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="nOStateLabel" prefHeight="40.0" prefWidth="40.0" styleClass="label-red-theme" stylesheets="@cssFiles/label.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="246.0" layoutY="224.0" prefHeight="40.0" prefWidth="213.0" spacing="15.0">
+         <children>
+            <TextField fx:id="accStateTextField" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="accStateBtn" mnemonicParsing="false" onAction="#accStateClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="✔">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="accStateLabel" prefHeight="40.0" prefWidth="40.0" styleClass="label-red-theme" stylesheets="@cssFiles/label.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="246.0" layoutY="275.0" prefHeight="40.0" prefWidth="213.0" spacing="15.0">
+         <children>
+            <TextField fx:id="rejStateTextField" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="rejStateBtn" mnemonicParsing="false" onAction="#rejStateClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="✔">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="rejStateLabel" prefHeight="40.0" prefWidth="40.0" styleClass="label-red-theme" stylesheets="@cssFiles/label.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="312.0" layoutY="327.0" prefHeight="40.0" prefWidth="368.0" spacing="15.0">
+         <children>
+            <TextField fx:id="alphabetTextField" prefHeight="40.0" prefWidth="40.0" />
+            <Button fx:id="alphabetAddBtn" mnemonicParsing="false" onAction="#alphabetAddClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="+">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="alphabetBtn" mnemonicParsing="false" onAction="#alphabetClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="✔">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="alphabetLabel" prefHeight="40.0" prefWidth="163.0" styleClass="label-red-theme" stylesheets="@cssFiles/label.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="237.0" layoutY="610.0" prefHeight="40.0" prefWidth="213.0" spacing="15.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button fx:id="rightBtn" mnemonicParsing="false" onAction="#leftCLicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="◀">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="stayBtn" mnemonicParsing="false" onAction="#stayClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="◼">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="leftBtn" mnemonicParsing="false" onAction="#rightClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="▶">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="193.0" layoutY="673.0" prefHeight="40.0" prefWidth="213.0" spacing="15.0">
+         <children>
+            <Button fx:id="nextStateOKBtn" mnemonicParsing="false" onAction="#nextStateOKClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="✔">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextStateNoBtn" mnemonicParsing="false" onAction="#nextStateNoClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="x">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Text fx:id="startText" fill="#ff2c00" layoutX="73.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start the TM?" wrappingWidth="239.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="startBtn" layoutX="292.0" layoutY="728.0" mnemonicParsing="false" onAction="#startClicked" prefHeight="40.0" prefWidth="40.0" styleClass="button-style" stylesheets="@cssFiles/button.css" text="✔">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text fx:id="newStateText" fill="#ff2c00" layoutX="138.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New state" wrappingWidth="108.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newStateTextField" layoutX="237.0" layoutY="549.0" prefHeight="40.0" prefWidth="40.0" />
+    </children>
+</AnchorPane>

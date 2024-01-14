@@ -1,0 +1,77 @@
+.dark-background {
+    -fx-background-color: #333333; /* Replace with your desired darker color code */
+    -fx-text-fill: white; /* Set text color to contrast with the darker background */
+}
+
+.label-blue-theme {
+    -fx-background-color: #ffffff; /* Blue background color */
+    -fx-text-fill: #3498db; /* White text color */
+    -fx-font-size: 14px; /* Adjust font size as needed */
+    -fx-font-weight: bold; /* Optionally set font weight to bold */
+    -fx-border-color: #3498db; /* Blue border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+.start_button-style {
+    -fx-display: inline-block;
+    -fx-outline: 0;
+    -fx-cursor: hand;
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-color: #3498db; /* Blue */
+    -fx-text-fill: #fff;
+    -fx-background-color: #3498db; /* Blue */
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.07), 0, 2, 4, 0), dropshadow(gaussian, rgba(0, 0, 0, 0.05), 0, 1, 1.5, 0);
+    -fx-font-weight: 800;
+    -fx-font-size: 16px;
+    -fx-min-height: 42px;
+}
+
+.start_button-style:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db; /* Blue */
+}
+
+.button-style {
+    -fx-display: inline-block;
+    -fx-outline: 0;
+    -fx-cursor: hand;
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-color: #3498db; /* Blue */
+    -fx-text-fill: #fff;
+    -fx-background-color: #3498db; /* Blue */
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.07), 0, 2, 4, 0), dropshadow(gaussian, rgba(0, 0, 0, 0.05), 0, 1, 1.5, 0);
+    -fx-font-weight: 800;
+    -fx-font-size: 20px;
+    -fx-min-height: 42px;
+}
+
+.button-style:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db; /* Blue */
+}
+
+.load_button-style {
+    -fx-display: inline-block;
+    -fx-outline: 0;
+    -fx-cursor: hand;
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-color: #3498db; /* Blue */
+    -fx-text-fill: #fff;
+    -fx-background-color: #3498db; /* Blue */
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.07), 0, 2, 4, 0), dropshadow(gaussian, rgba(0, 0, 0, 0.05), 0, 1, 1.5, 0);
+    -fx-font-weight: 800;
+    -fx-font-size: 14px;
+    -fx-min-height: 42px;
+}
+
+.load_button-style:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db; /* Blue */
+}

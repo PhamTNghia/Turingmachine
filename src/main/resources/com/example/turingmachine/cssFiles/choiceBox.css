@@ -1,0 +1,30 @@
+.choice-box-blue-rounded {
+    -fx-background-color: #3498db; /* Blue background color */
+    -fx-border-color: #2980b9; /* Darker blue border color */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px; /* Adjust the value for the desired rounded corner radius */
+    -fx-text-fill: #fff; /* White text color */
+    -fx-font-size: 1em;
+    -fx-font-family: 'Open Sans', sans-serif;
+}
+
+.choice-box-blue-rounded .arrow-button {
+    -fx-background-color: #2980b9; /* Darker blue for the arrow background */
+    -fx-shape: "M 0 0 L 5 5 L 10 0 Z";
+    -fx-padding: 5px;
+}
+
+.choice-box-blue-rounded:hover {
+    -fx-background-color: #2074a0; /* Darker blue on hover */
+}
+
+.choice-box-blue-rounded .menu-item {
+    -fx-background-color: #3498db; /* Blue background for the items */
+    -fx-text-fill: #fff; /* White text color */
+    -fx-font-size: 1em;
+    -fx-font-family: 'Open Sans', sans-serif;
+}
+
+.choice-box-blue-rounded .menu-item:hover {
+    -fx-background-color: #2074a0; /* Darker blue for the items on hover */
+}
